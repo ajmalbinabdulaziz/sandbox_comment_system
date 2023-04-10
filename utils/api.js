@@ -1,0 +1,26 @@
+const comments = [
+    {  _createdAt:'2023-01-13T14:44:55Z',
+        _id: '4901c936-f763-4371-b840-c203bb831b96',
+        _rev: '6Vls4oQANAVoKc5IPcpqfo',
+        _type: 'comment',
+        _updatedAt: '2023-01-13T14:44:55Z',
+        message: 'First parent comment',
+        user: 'Rivoga',
+        userId: 1,
+        parentId: null,
+    },
+    {
+        _createdAt:'2023-01-13T16:31:08Z',
+        _id: 'b5c7321b-7a18-4a49-8893-d08bd87be55d',
+        _rev: 'B4PIvYGv2UFUcg0RKBFFsR',
+        _type: 'comment',
+        _updatedAt: '2023-01-13T16:50:55Z',
+        message: 'First child comment to 1st parent comment',
+        user: 'Rivoga',
+        userId: 1,
+        parentId: {
+            _ref: '4901c936-f763-4371-b840-c203bb831b96',
+            _type: 'reference',
+        },
+    },
+]
